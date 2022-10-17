@@ -42,7 +42,7 @@ A couple caveats:
 ## Connecting Wii Controller(s)
 ### Progress so far
 
-As per the [xwiimote](https://dvdhrm.github.io/xwiimote/) wiki, the linux kernel has drivers installed that support specific these devices:
+As per the [xwiimote](https://dvdhrm.github.io/xwiimote/) wiki, the linux kernel has drivers installed that support these devices:
 - :heavy_check_mark: Nintendo Wii Remote (Nintendo RVL-CNT-01)
 - :black_square_button: Nintendo Wii Nunchuk Extension
 - :black_square_button: Nintendo Wii Balance Board (Nintendo RVL-WBC-01)
@@ -53,7 +53,7 @@ As per the [xwiimote](https://dvdhrm.github.io/xwiimote/) wiki, the linux kernel
 - :heavy_minus_sign: Nintendo Wii Guitar Extensions
 - :heavy_minus_sign: Nintendo Wii Drums Extensions
 
-It is recommended that any development is not done using the Kernel driver, but rather in user space using APIs exposing the Kernel. There have been previous attempts (more in the xwiimote page), but the main methods found so far are as follows:
+It is recommended that any development is not done using the Kernel driver, but rather in user space using APIs exposing the Kernel. A couple of libraries are documented on [Wiibrew](https://wiibrew.org/wiki/Wiimote/Library). The main methods I believe are:
 - [xwiimote](https://github.com/dvdhrm/xwiimote) package
   - The API is documented [here](http://dvdhrm.github.io/xwiimote/api/)
   - TODO: Note that a couple extra packages had to be installed before the xwiimote package was installed. These include: `libudev-dev`, `libtool`, `libncurses5-dev`, `libncursesw5-dev`
