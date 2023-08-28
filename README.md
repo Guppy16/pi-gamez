@@ -54,7 +54,7 @@ As per the [xwiimote](https://dvdhrm.github.io/xwiimote/) wiki, the linux kernel
 - :heavy_minus_sign: Nintendo Wii Drums Extensions
 
 It is recommended that any development is not done using the Kernel driver, but rather in user space using APIs exposing the Kernel. A couple of libraries are documented on [Wiibrew](https://wiibrew.org/wiki/Wiimote/Library). The main methods I believe are:
-- [xwiimote](https://github.com/dvdhrm/xwiimote) package
+- [xwiimote](https://github.com/dvdhrm/xwiimote) github
   - The API is documented [here](http://dvdhrm.github.io/xwiimote/api/)
   - TODO: Note that a couple extra packages had to be installed before the xwiimote package was installed. These include: `libudev-dev`, `libtool`, `libncurses5-dev`, `libncursesw5-dev`
 - [xwiimote-bindings](https://github.com/dvdhrm/xwiimote-bindings) package that provides APIs for Perl or Python. 
@@ -74,10 +74,16 @@ I have been unable to connect my Wii U Pro Controller. The internet appears not 
     - Some people found that there was an issue connecting the Wii U Pro Controller after an update [here](https://www.linux.org/threads/solved-cannot-connect-wii-u-pro-controller-after-an-update.33396/)
     - [Guide getting a Wii U Pro Controller to work](https://www.linuxquestions.org/questions/slackware-14/guide-getting-a-wii-u-pro-controller-to-work-4175576590/). 
     Although I haven't tried it, it doesn't look like it will work, because it assumes that the BL connection works, which it didn't for me.
-    
+    - [Using Wii U Pro Controller with adaptor reddit thread](https://www.reddit.com/r/linux_gaming/comments/6ce02l/using_the_wii_u_pro_controller_with_adaptor_on/)
 ### Other Nintendo Controllers
-- 
-- Note that it also seems that a Switch controller can't be connected yet as mentioned on this [reddit thread](https://www.reddit.com/r/linux_gaming/comments/98xkt9/wiiu_pro_controllers_dont_work/). 
+
+- Note that it alsblueo seems that a Switch controller can't be connected yet as mentioned on this [reddit thread](https://www.reddit.com/r/linux_gaming/comments/98xkt9/wiiu_pro_controllers_dont_work/). 
 - However [this reddit thread](https://www.reddit.com/r/wiiu/comments/f5cn77/wii_u_pro_controller_in_linux/) suggests that there is a `hid-nintendo` driver which can connect to the switch controller. 
 - The last resort is to use the Mayflash adpater which can connect to any remote
- 
+
+---
+### Asides
+
+- [Blueman versions](https://repology.org/project/blueman/versions)
+- [wiimote driver src code](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/hid/hid-wiimote-core.c)
+- [Ubuntu Forums](https://ubuntuforums.org/showthread.php?t=2159885)
