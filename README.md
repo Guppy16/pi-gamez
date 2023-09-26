@@ -87,3 +87,6 @@ I have been unable to connect my Wii U Pro Controller. The internet appears not 
 - [Blueman versions](https://repology.org/project/blueman/versions)
 - [wiimote driver src code](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/hid/hid-wiimote-core.c)
 - [Ubuntu Forums](https://ubuntuforums.org/showthread.php?t=2159885)
+- [Outdoor Target Positioning Using Wii Remote IR Camera and Signal Modulation](https://www.mdpi.com/1424-8220/20/8/2163)
+- [3D Spatial Interaction with the Wii Remote for Head-Mounted Display Virtual Reality](https://ro.uow.edu.au/cgi/viewcontent.cgi?article=10591&context=infopapers#:~:text=This%20provided%20spatial%203D%20tracking,a%20number%20of%20other%20ways.)
+- Emulating a Gaming Device - Raspberry Pi Zero , may require writing your own HID driver
